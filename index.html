@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal Portfolio of an Aspiring Front-End Developer showcasing projects, skills, and contact information.">
+  <title>Front-End Developer Portfolio</title>
+  
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Loading Animation -->
+  <div id="loader">
+    <div class="spinner"></div>
+  </div>
+
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- Sticky Navigation Bar -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-accent">&lt;</span>Dev<span class="logo-accent">/&gt;</span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+        <ul class="nav-list">
+          <li class="nav-item"><a href="#home" class="nav-link active-link">Home</a></li>
+          <li class="nav-item"><a href="#about" class="nav-link">About</a></li>
+          <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+          <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+          <li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="#education" class="nav-link">Education</a></li>
+          <li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+        <button class="nav-close" id="navClose" aria-label="Close menu">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="nav-toggle" id="navToggle" aria-label="Open menu">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <main class="main">
+    
+    <!-- 1. Home / Hero Section -->
+    <section class="home section" id="home">
+      <div class="home-container container grid">
+        <div class="home-data">
+          <span class="home-greeting">Welcome to my portfolio</span>
+          <h1 class="home-title">Hi, I'm <span class="highlight">Cyrus John Aclo</span></h1>
+          <h2 class="home-subtitle">An Aspiring Front-End Developer</h2>
+          <p class="home-description">
+            I’m passionate about creating modern, responsive, and user-friendly websites using HTML, CSS, JavaScript, and modern web technologies.
+          </p>
+          <div class="home-buttons">
+            <a href="#projects" class="btn btn-primary">
+              View My Projects <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              Contact Me
+            </a>
+          </div>
+        </div>
+
+        <div class="home-img-wrapper">
+          <div class="home-blob">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <path fill="#FDECEF" d="M44.7,-59.1C56.9,-50.2,65,-34.8,68.2,-18.7C71.3,-2.7,69.5,14,62.8,28C56,42,44.2,53.2,30.3,60.6C16.3,68,-0.1,71.6,-16.9,68.2C-33.7,64.8,-51,54.4,-61.7,39.8C-72.4,25.2,-76.6,6.3,-73.2,-10.8C-69.8,-27.9,-58.8,-43.3,-44.8,-51.9C-30.8,-60.5,-13.8,-62.3,2,-65C17.8,-67.7,32.5,-68,44.7,-59.1Z" transform="translate(100 100)" />
+            </svg>
+            <div class="home-avatar">
+              <i class="fa-solid fa-code"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. About Me Section -->
+    <section class="about section" id="about">
+      <h2 class="section-title">About Me</h2>
+      <span class="section-subtitle">My introduction</span>
+
+      <div class="about-container container grid">
+        <div class="about-content">
+          <p class="about-text">
+            I am a motivated aspiring Front-End Developer with a continuous learning mindset and a focus on clean, responsive UI/UX design. I bridge the gap between design concepts and seamless web performance.
+          </p>
+          
+          <div class="about-highlights">
+            <div class="about-highlight-item">
+              <i class="fa-solid fa-bullseye highlight-icon"></i>
+              <div>
+                <h4>Career Goals</h4>
+                <p>To join an innovative tech team where I can contribute to user-centered software products and grow as a full-stack engineer.</p>
+              </div>
+            </div>
+
+            <div class="about-highlight-item">
+              <i class="fa-solid fa-star highlight-icon"></i>
+              <div>
+                <h4>Strengths & Interests</h4>
+                <p>Detail-oriented design implementation, cross-browser compatibility, web performance optimization, and accessible component architectures.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-stats grid">
+          <div class="stat-card">
+            <span class="stat-number" data-target="12">0</span>+
+            <span class="stat-title">Projects Completed</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="8">0</span>+
+            <span class="stat-title">Technologies Learned</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="2">0</span>+
+            <span class="stat-title">Years Learning</span>
+          </div>
+          <div class="stat-card">
+            <span class="stat-number" data-target="15">0</span>+
+            <span class="stat-title">Goals Achieved</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Skills Section -->
+    <section class="skills section" id="skills">
+      <h2 class="section-title">Skills</h2>
+      <span class="section-subtitle">My technical level</span>
+
+      <div class="skills-container container grid">
+        <!-- Skill 1 -->
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-html5 skill-icon"></i>
+            <div>
+              <h3 class="skill-name">HTML5</h3>
+              <p class="skill-desc">Semantic structure and web accessibility standard practices.</p>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Proficiency</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 2 -->
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-css3-alt skill-icon"></i>
+            <div>
+              <h3 class="skill-name">CSS3</h3>
+              <p class="skill-desc">Flexbox, Grid systems, keyframe animations, and custom styling.</p>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Proficiency</span>
+              <span>85%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--width: 85%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 3 -->
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-js skill-icon"></i>
+            <div>
+              <h3 class="skill-name">JavaScript</h3>
+              <p class="skill-desc">DOM manipulation, ES6+ features, fetch API, and asynchronous code.</p>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Proficiency</span>
+              <span>75%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--width: 75%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 4 -->
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-solid fa-mobile-screen-button skill-icon"></i>
+            <div>
+              <h3 class="skill-name">Responsive Web Design</h3>
+              <p class="skill-desc">Mobile-first designs, media queries, and fluid typography.</p>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Proficiency</span>
+              <span>90%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--width: 90%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 5 -->
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-solid fa-pen-nib skill-icon"></i>
+            <div>
+              <h3 class="skill-name">UI/UX Design</h3>
+              <p class="skill-desc">Wireframing, color theory, prototyping, and accessibility focus.</p>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Proficiency</span>
+              <span>70%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--width: 70%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 6 -->
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-github skill-icon"></i>
+            <div>
+              <h3 class="skill-name">Git & GitHub</h3>
+              <p class="skill-desc">Version control, feature branching, pull requests, and collaboration.</p>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Proficiency</span>
+              <span>80%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--width: 80%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 7 -->
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-solid fa-database skill-icon"></i>
+            <div>
+              <h3 class="skill-name">Database Fundamentals</h3>
+              <p class="skill-desc">SQL basics, relational database schemas, and CRUD operations.</p>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Proficiency</span>
+              <span>65%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--width: 65%;"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skill 8 -->
+        <div class="skill-card">
+          <div class="skill-head">
+            <i class="fa-brands fa-java skill-icon"></i>
+            <div>
+              <h3 class="skill-name">Java</h3>
+              <p class="skill-desc">Object-oriented programming concepts, classes, and logic algorithms.</p>
+            </div>
+          </div>
+          <div class="skill-bar-wrapper">
+            <div class="skill-info">
+              <span>Proficiency</span>
+              <span>60%</span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" style="--width: 60%;"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Projects Section -->
+    <section class="projects section" id="projects">
+      <h2 class="section-title">Projects</h2>
+      <span class="section-subtitle">Most recent work</span>
+
+      <!-- Filter Controls -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="html-css">HTML/CSS</button>
+        <button class="filter-btn" data-filter="javascript">JavaScript</button>
+        <button class="filter-btn" data-filter="java">Java</button>
+        <button class="filter-btn" data-filter="ui-ux">UI/UX</button>
+      </div>
+
+      <div class="projects-container container grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="javascript html-css">
+          <div class="project-img-box">
+            <div class="project-placeholder-img">
+              <i class="fa-solid fa-mug-hot"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Peace-Tea Milk Tea Website</h3>
+            <p class="project-description">
+              A responsive website for a milk tea shop featuring interactive product menus and order forms.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-small btn-secondary" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="html-css javascript ui-ux">
+          <div class="project-img-box">
+            <div class="project-placeholder-img">
+              <i class="fa-solid fa-user-ninja"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Personal Portfolio Website</h3>
+            <p class="project-description">
+              A personal portfolio featuring dark/light accents, dynamic filtering, and contact validation.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML5</span>
+              <span class="tag">CSS3</span>
+              <span class="tag">JavaScript</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-small btn-secondary" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="javascript java">
+          <div class="project-img-box">
+            <div class="project-placeholder-img">
+              <i class="fa-solid fa-calculator"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Student Grade Calculator</h3>
+            <p class="project-description">
+              An interactive web application to compute final subject grades, weighted averages, and passing status.
+            </p>
+            <div class="project-tags">
+              <span class="tag">JavaScript</span>
+              <span class="tag">Java Logic</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-small btn-secondary" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card" data-category="html-css ui-ux">
+          <div class="project-img-box">
+            <div class="project-placeholder-img">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Responsive Landing Page</h3>
+            <p class="project-description">
+              A high-converting product landing page built with fluid layout grid principles and clean call-to-actions.
+            </p>
+            <div class="project-tags">
+              <span class="tag">HTML</span>
+              <span class="tag">CSS Grid</span>
+              <span class="tag">UI/UX</span>
+            </div>
+            <div class="project-links">
+              <a href="#" class="btn btn-small btn-primary" target="_blank" rel="noopener">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="#" class="btn btn-small btn-secondary" target="_blank" rel="noopener">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Services Section -->
+    <section class="services section" id="services">
+      <h2 class="section-title">Services</h2>
+      <span class="section-subtitle">What I offer</span>
+
+      <div class="services-container container grid">
+        <div class="service-card">
+          <i class="fa-solid fa-code service-icon"></i>
+          <h3 class="service-title">Front-End Development</h3>
+          <p class="service-description">Building responsive, pixel-perfect, and accessible web interfaces using semantic HTML, clean CSS, and modern JavaScript.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-display service-icon"></i>
+          <h3 class="service-title">Responsive Web Design</h3>
+          <p class="service-description">Ensuring your web application runs seamlessly across all screen sizes including smartphones, tablets, and desktop displays.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-compass-drafting service-icon"></i>
+          <h3 class="service-title">Website UI Design</h3>
+          <p class="service-description">Designing attractive and intuitive visual interfaces with soft color palettes, consistent typography, and easy user flows.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-rocket service-icon"></i>
+          <h3 class="service-title">Landing Page Development</h3>
+          <p class="service-description">Creating fast-loading landing pages designed to showcase product offerings and drive high visitor conversion rates.</p>
+        </div>
+
+        <div class="service-card">
+          <i class="fa-solid fa-wrench service-icon"></i>
+          <h3 class="service-title">Website Maintenance</h3>
+          <p class="service-description">Updating existing website content, fixing layout bugs, improving page performance, and upgrading underlying codebase elements.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Education / Journey Section -->
+    <section class="education section" id="education">
+      <h2 class="section-title">Education & Journey</h2>
+      <span class="section-subtitle">My personal learning timeline</span>
+
+      <div class="timeline-container container">
+        <div class="timeline">
+          
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023 - Present</div>
+            <div class="timeline-content">
+              <h3>Bachelor of Science in Information Technology</h3>
+              <p class="timeline-institution">College / University Name</p>
+              <p>Focusing on web development, software engineering principles, database systems, and object-oriented programming with Java.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2023</div>
+            <div class="timeline-content">
+              <h3>Front-End Web Development Bootcamp</h3>
+              <p class="timeline-institution">Online Milestone / Learning Track</p>
+              <p>Mastered modern HTML5 structures, CSS Flexbox & CSS Grid, and responsive layout standards for cross-device compatibility.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+              <h3>Interactive JavaScript & DOM Fundamentals</h3>
+              <p class="timeline-institution">Self-Directed Learning & Projects</p>
+              <p>Deepened understanding of vanilla JavaScript logic, state management, event listeners, array operations, and asynchronous fetches.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Resume Section -->
+    <section class="resume section" id="resume">
+      <div class="resume-container container">
+        <div class="resume-card">
+          <i class="fa-solid fa-file-pdf resume-icon"></i>
+          <h2 class="resume-title">Curious about my full background?</h2>
+          <p class="resume-text">
+            Download my updated resume to review my academic history, completed coursework, technical skills, and practical development projects.
+          </p>
+          <a href="assets/resume/placeholder-resume.pdf" class="btn btn-primary" download="Developer-Resume.pdf" id="downloadResume">
+            <i class="fa-solid fa-download"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. Contact Section -->
+    <section class="contact section" id="contact">
+      <h2 class="section-title">Contact Me</h2>
+      <span class="section-subtitle">Get in touch</span>
+
+      <div class="contact-container container grid">
+        <div class="contact-info">
+          <div class="contact-card">
+            <i class="fa-solid fa-envelope contact-icon"></i>
+            <div>
+              <h3>Email</h3>
+              <span>cyrusjohnaclo8@gmail.com</span>
+            </div>
+          </div>
+
+          <div class="contact-card">
+            <i class="fa-solid fa-location-dot contact-icon"></i>
+            <div>
+              <h3>Location</h3>
+              <span>Your City, Country</span>
+            </div>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://facebook.com" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener" class="social-link" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-group">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input type="text" id="fullName" class="form-input" placeholder="e.g. Jane Doe" required>
+            <span class="error-msg" id="nameError">Full name is required.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" id="email" class="form-input" placeholder="e.g. jane@example.com" required>
+            <span class="error-msg" id="emailError">Please enter a valid email address.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="subject" class="form-label">Subject</label>
+            <input type="text" id="subject" class="form-input" placeholder="e.g. Internship Opportunity" required>
+            <span class="error-msg" id="subjectError">Subject is required.</span>
+          </div>
+
+          <div class="form-group">
+            <label for="message" class="form-label">Message</label>
+            <textarea id="message" rows="5" class="form-input" placeholder="Type your message here..." required></textarea>
+            <span class="error-msg" id="messageError">Message must be at least 10 characters.</span>
+          </div>
+
+          <button type="submit" class="btn btn-primary form-btn">
+            <i class="fa-solid fa-paper-plane"></i> Send Message
+          </button>
+
+          <div class="form-status" id="formStatus"></div>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container container">
+      <div class="footer-logo">
+        <span class="logo-accent">&lt;</span>Dev<span class="logo-accent">/&gt;</span>
+      </div>
+      <p class="footer-text">&copy; 2026 Cyrus John Aclo. All rights reserved. Crafted with passion for Front-End Web Development.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#home" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </a>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
