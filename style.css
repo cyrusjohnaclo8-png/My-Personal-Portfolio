@@ -306,6 +306,7 @@ button {
   flex-wrap: wrap;
 }
 
+
 .home-img-wrapper {
   display: flex;
   justify-content: center;
@@ -319,14 +320,15 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 
 .home-blob img {
   position: absolute;
-  width: 200%;
-  height: 200%;
-  z-index: 1;
-  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 .home-avatar {
